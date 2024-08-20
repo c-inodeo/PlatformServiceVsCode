@@ -20,6 +20,7 @@ namespace PlatformService.Data
                     new Models.Platform() {Name="Kubernetes", Publisher="Cloud Native Computing Foundation", Cost="Free"}
                 );
                 context.SaveChanges();
+                Console.WriteLine("Done Seeding");
             }
             else
             {

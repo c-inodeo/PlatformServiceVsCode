@@ -1,11 +1,17 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /app
 
-COPY *.csproj ./
-RUN dotnet restore
+COPY PlatformService/PlatformService.generated.sln ./
 
-COPY . ./
-RUN dotnet publish PlatformService.generated.sln -c Release -o out
+COPY PlatformService/PlatformService.csproj PlatformService/
+COPY CommandsService/CommandsService.csproj CommandsService/
+
+RUN dotnet restore PlatformService.generated.sln
+
+COPY PlatformService/. PlatformService/
+COPY CommandsService/. CommandsService/
+
+RUN dotnet publish PlatformService/PlatformService.csproj -c Release -o /app/out
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app

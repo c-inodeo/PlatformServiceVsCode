@@ -4,7 +4,7 @@ namespace PlatformService.Data
 {
     public interface IPlatformRepo
     {
-        bool SaveChangtes();
+        bool SaveChanges();
 
         IEnumerable<Platform> GetAllPlatforms();
         Platform GetPlatformById(int id);

@@ -140,3 +140,4 @@ D:\s4\e3\PlatformService\obj\Debug\net8.0\PlatformService.pdb
 D:\s4\e3\PlatformService\obj\Debug\net8.0\PlatformService.genruntimeconfig.cache
 D:\s4\e3\PlatformService\obj\Debug\net8.0\ref\PlatformService.dll
 D:\s4\e3\PlatformService\bin\Debug\net8.0\appsettings.Production.json
+D:\s4\e3\PlatformService\bin\Debug\net8.0\RabbitMQ.Client.dll

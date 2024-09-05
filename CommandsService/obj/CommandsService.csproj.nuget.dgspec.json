@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\s4\\e3\\CommandsService\\CommandsService.csproj": {}
+    "d:\\s4\\e3\\CommandsService\\CommandsService.csproj": {}
   },
   "projects": {
-    "D:\\s4\\e3\\CommandsService\\CommandsService.csproj": {
+    "d:\\s4\\e3\\CommandsService\\CommandsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\s4\\e3\\CommandsService\\CommandsService.csproj",
+        "projectUniqueName": "d:\\s4\\e3\\CommandsService\\CommandsService.csproj",
         "projectName": "CommandsService",
-        "projectPath": "D:\\s4\\e3\\CommandsService\\CommandsService.csproj",
+        "projectPath": "d:\\s4\\e3\\CommandsService\\CommandsService.csproj",
         "packagesPath": "C:\\Users\\cinodeo\\.nuget\\packages\\",
-        "outputPath": "D:\\s4\\e3\\CommandsService\\obj\\",
+        "outputPath": "d:\\s4\\e3\\CommandsService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cinodeo\\AppData\\Roaming\\NuGet\\NuGet.Config"

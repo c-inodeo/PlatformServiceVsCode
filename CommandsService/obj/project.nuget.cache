@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GHNcE4JOW40=",
+  "dgSpecHash": "uH+BYvxlKcw=",
   "success": true,
-  "projectFilePath": "D:\\s4\\e3\\CommandsService\\CommandsService.csproj",
+  "projectFilePath": "d:\\s4\\e3\\CommandsService\\CommandsService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cinodeo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\cinodeo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

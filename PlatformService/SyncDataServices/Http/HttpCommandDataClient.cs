@@ -22,15 +22,15 @@ namespace PlatformService.SyncDataServices.Http
                 "application/json"
             );
 
-            var response = await _httpClient.PostAsync($"{_configuration["CommandService"]}", httpContent);
+            var response = await _httpClient.PostAsync($"{_configuration["CommandsService"]}", httpContent);
         
             if(response.IsSuccessStatusCode)
             {
-                Console.WriteLine("--> Sync POST to CommandService is OK! <--");
+                Console.WriteLine("--> Sync POST to CommandsService is OK! <--");
             }
             else
             {
-                Console.WriteLine("--> Sync POST to CommandService is not OK! <--");
+                Console.WriteLine("--> Sync POST to CommandsService is not OK! <--");
 
             }
         }

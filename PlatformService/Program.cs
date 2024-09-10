@@ -35,10 +35,9 @@ builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
 builder.Services.AddGrpc();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-Console.WriteLine($"Command Service Endpoint {configuration["CommandService"]}");
+Console.WriteLine($"Command Service Endpoint {configuration["CommandsService"]}");
 
 var app = builder.Build();
-
 
 
 // Configure the HTTP request pipeline.

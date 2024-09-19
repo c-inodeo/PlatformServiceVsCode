@@ -54,7 +54,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
     endpoints.MapGrpcService<GrpcPlatformService>();
 
-    endpoints.MapGet("protos/platforms.proto", async context =>
+    endpoints.MapGet("/protos/platforms.proto", async context =>
     {
         await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
     });

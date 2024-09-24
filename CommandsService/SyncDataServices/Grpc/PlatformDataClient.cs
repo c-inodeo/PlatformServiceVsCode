@@ -25,17 +25,16 @@ namespace CommandsService.SyncDataServices.Grpc
             Console.WriteLine($"--> Calling GRPC Services {_configuration["GrpcPlatform"]}");
             
             var handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback = 
-                HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-
+            handler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
             var channel = GrpcChannel.ForAddress(_configuration["GrpcPlatform"],
-             new GrpcChannelOptions {LoggerFactory = _loggerFactor});
+                    new GrpcChannelOptions {LoggerFactory = _loggerFactor});
             var client = new GrpcPlatform.GrpcPlatformClient(channel);
             var request = new GetAllRequest();
 
             try
             {
                 var reply = client.GetAllPlatforms(request);
+                Console.WriteLine($"--->CHECK REPLY : {reply}");
                 return _mapper.Map<IEnumerable<Platform>>(reply.Platform);
             }
             catch (Exception ex)

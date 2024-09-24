@@ -58,12 +58,13 @@ namespace PlatformService.Controllers
             try
             {
                 await _commandDataClient.SendPlatformToCommand(platformReadDto);
+                Console.WriteLine("----->platformReadDto ERRROR<--");
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"--> Could not send synchronously: {ex.Message} <--");
             }
-
             //send Async Message
             try
             {
